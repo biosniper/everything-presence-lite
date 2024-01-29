@@ -55,6 +55,21 @@ binary_sensor:
 
 number:
   - platform: template
+    name: "Update frequency"
+    id: user_update_freq
+    unit_of_measurement: "ms"
+    min_value: 1
+    max_value: 1000
+    step: 1
+    mode: slider
+    update_interval: never
+    optimistic: true
+    restore_value: true
+    initial_value: 1000
+    icon: "mdi:timer-cog-outline"
+    entity_category: config
+
+  - platform: template
     name: "Occupancy Off Delay"
     id: off_delay
     max_value: 600
@@ -450,7 +465,8 @@ uart:
     sequence:
       # - lambda: UARTDebug::log_hex(direction, bytes, ' ');
       - lambda: |-
-          if ((millis() - id(mmwave_update_time)) <= 1000) { 
+          float update_freq = float(id(user_update_freq).state);
+          if ((millis() - id(mmwave_update_time)) <= update_freq) { 
             return;
           };
           id(mmwave_update_time) = millis();
