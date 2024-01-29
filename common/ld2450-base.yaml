@@ -55,7 +55,7 @@ binary_sensor:
 
 number:
   - platform: template
-    name: "Update frequency"
+    name: "Update Rate"
     id: user_update_freq
     native_min_value: 250
     min_value: 250
@@ -69,6 +69,7 @@ number:
     initial_value: 1000
     icon: "mdi:timer-cog-outline"
     entity_category: config
+    disabled_by_default: true
 
   - platform: template
     name: "Occupancy Off Delay"
