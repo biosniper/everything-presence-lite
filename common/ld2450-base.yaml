@@ -57,7 +57,6 @@ number:
   - platform: template
     name: "Update Rate"
     id: user_update_freq
-    native_min_value: 250
     min_value: 250
     max_value: 1000
     unit_of_measurement: "ms"
@@ -152,7 +151,7 @@ number:
     step: 10
     optimistic: True
     restore_value: True
-    disabled_by_default: true
+    disabled_by_default: false
   - platform: template
     name: "Zone 2 End X"
     id: zone2_end_x
@@ -162,7 +161,7 @@ number:
     step: 10
     optimistic: True
     restore_value: True
-    disabled_by_default: true
+    disabled_by_default: false
   - platform: template
     name: "Zone 2 Begin Y"
     id: zone2_begin_y
@@ -172,7 +171,7 @@ number:
     step: 10
     optimistic: True
     restore_value: True
-    disabled_by_default: true
+    disabled_by_default: false
   - platform: template
     name: "Zone 2 End Y"
     id: zone2_end_y
@@ -182,7 +181,7 @@ number:
     step: 10
     optimistic: True
     restore_value: True
-    disabled_by_default: true
+    disabled_by_default: false
   - platform: template
     name: "Zone 2 Occupancy Off Delay"
     id: zone_2_off_delay
@@ -193,7 +192,7 @@ number:
     restore_value: True
     unit_of_measurement: "s"
     initial_value: 15
-    disabled_by_default: true
+    disabled_by_default: false
 
   - platform: template
     name: "Zone 3 Begin X"
