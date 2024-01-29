@@ -57,10 +57,11 @@ number:
   - platform: template
     name: "Update frequency"
     id: user_update_freq
-    unit_of_measurement: "ms"
+    native_min_value: 250
     min_value: 250
     max_value: 1000
-    step: 1
+    unit_of_measurement: "ms"
+    step: 50
     mode: box
     update_interval: never
     optimistic: true
