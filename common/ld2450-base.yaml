@@ -58,7 +58,7 @@ number:
     name: "Update frequency"
     id: user_update_freq
     unit_of_measurement: "ms"
-    min_value: 1
+    min_value: 250
     max_value: 1000
     step: 1
     mode: slider
@@ -440,6 +440,14 @@ sensor:
     id: zone4_target_count
     accuracy_decimals: 0
     disabled_by_default: true
+
+  - platform: internal_temperature
+    id: internal_temperature
+    name: "ESP Internal Temperature"
+    update_interval: "5s"
+    unit_of_measurement: °C
+    device_class: TEMPERATURE
+    entity_category: diagnostic
 
 uart:
   id: uart_bus
