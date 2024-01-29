@@ -441,14 +441,6 @@ sensor:
     accuracy_decimals: 0
     disabled_by_default: true
 
-  - platform: internal_temperature
-    id: internal_temperature
-    name: "ESP Internal Temperature"
-    update_interval: "5s"
-    unit_of_measurement: °C
-    device_class: TEMPERATURE
-    entity_category: diagnostic
-
 uart:
   id: uart_bus
   tx_pin: 

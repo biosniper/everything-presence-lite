@@ -63,6 +63,10 @@ sensor:
     update_interval: ${illuminance_update_interval}
     filters:
       - lambda: "return x + id(illuminance_offset_ui).state;"
+  - platform: internal_temperature
+    id: internal_temperature
+    name: "ESP Internal Temperature"
+    update_interval: "5s"
 
 button:
   - platform: restart
