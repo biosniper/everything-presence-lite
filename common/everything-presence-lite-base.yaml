@@ -68,3 +68,6 @@ button:
   - platform: restart
     icon: mdi:power-cycle
     name: "ESP Reboot"
+  - platform: factory_reset
+    icon: mdi:lock-reset
+    name: "Factory reset"
