@@ -3,7 +3,7 @@ substitutions:
   friendly_name: "Everything Presence Lite"
   illuminance_update_interval: "2s"
   hidden_ssid: "false"
-  log_level: DEBUG
+  log_level: ERROR
 
 dashboard_import:
   package_import_url: github://biosniper/everything-presence-lite/everything-presence-lite-ha.yaml
