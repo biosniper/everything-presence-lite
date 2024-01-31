@@ -67,7 +67,6 @@ number:
     restore_value: true
     initial_value: 1000
     icon: "mdi:timer-cog-outline"
-    entity_category: config
     disabled_by_default: true
 
   - platform: template
