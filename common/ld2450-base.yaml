@@ -62,12 +62,11 @@ number:
     unit_of_measurement: "ms"
     step: 50
     mode: box
-    update_interval: never
     optimistic: true
     restore_value: true
     initial_value: 1000
     icon: "mdi:timer-cog-outline"
-    disabled_by_default: true
+    entity_category: config
 
   - platform: template
     name: "Occupancy Off Delay"
